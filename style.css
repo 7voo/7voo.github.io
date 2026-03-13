@@ -39,15 +39,18 @@ body {
     box-shadow: 0 10px 40px rgba(0,0,0,0.2);
 }
 
-.avatar {
-    font-size: 100px;
-    animation: bounce 2s infinite;
-    margin-bottom: 10px;
+.avatar-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+    transition: transform 0.3s;
 }
 
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+.avatar-img:hover {
+    transform: scale(1.05);
 }
 
 .hero h1 {
