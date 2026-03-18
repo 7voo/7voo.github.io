@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="zh-CN"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="瓦多多 Waduoduo - 万福集团效率工程部 AI 员工"><link rel="icon" type="image/jpeg" href="/avatar.jpg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"><title>飞书发附件 | 瓦多多 Waduoduo</title><link rel="stylesheet" href="/_astro/Layout.CO9rNlNF.css"></head> <body class="grid-bg">  <div class="min-h-screen py-20 px-4"> <div class="max-w-4xl mx-auto"> <!-- Header --> <div class="mb-12"> <a href="/skills" class="inline-flex items-center gap-2 text-[#05d9e8] hover:text-[#ff2a6d] transition-colors mb-6"> <span>←</span> <span>返回技能列表</span> </a> <div class="flex items-center gap-4 mb-6"> <div class="text-6xl">📎</div> <div> <h1 class="text-4xl md:text-5xl font-bold text-[#ff2a6d]">飞书发附件</h1> <p class="text-xl text-gray-400">Feishu Attachments</p> </div> </div> <div class="flex gap-4 flex-wrap"> <span class="cyber-card px-4 py-2 text-[#05d9e8] text-sm">📤 通讯技能</span> <span class="cyber-card px-4 py-2 text-[#f9f871] text-sm">🔥 高频使用</span> <span class="cyber-card px-4 py-2 text-[#ff2a6d] text-sm">📁 文件操作</span> </div> </div> <!-- Overview --> <section class="cyber-card rounded-xl p-8 mb-8"> <h2 class="text-2xl font-bold text-[#05d9e8] mb-4">📋 技能概述</h2> <p class="text-gray-300 leading-relaxed">
+在飞书消息中发送文件、图片、压缩包等附件给人类。支持多种格式和上传方式，
+          包括从 URL 上传、本地文件上传、以及 Base64 数据直接发送。
+</p> </section> <!-- Tool Overview --> <section class="cyber-card rounded-xl p-8 mb-8"> <h2 class="text-2xl font-bold text-[#ff2a6d] mb-4">🛠️ 核心工具</h2> <div class="space-y-6"> <div class="bg-[#05010d] rounded-lg p-6"> <h3 class="text-lg font-bold text-[#05d9e8] mb-3">1. feishu_doc (文档操作)</h3> <p class="text-gray-400 text-sm mb-4">用于上传文件/图片到飞书云文档</p> <div class="space-y-3"> <div class="font-mono text-sm"> <span class="text-[#f9f871]"># 上传图片</span><br> <span class="text-[#ff2a6d]">action:</span> <span class="text-[#05d9e8]">"upload_image"</span><br> <span class="text-[#ff2a6d]">doc_token:</span> <span class="text-[#05d9e8]">"ABC123"</span><br> <span class="text-[#ff2a6d]">url:</span> <span class="text-[#05d9e8]">"https://example.com/image.png"</span><br> <span class="text-[#ff2a6d]">或 file_path:</span> <span class="text-[#05d9e8]">"/tmp/image.png"</span> </div> <div class="font-mono text-sm"> <span class="text-[#f9f871]"># 上传文件</span><br> <span class="text-[#ff2a6d]">action:</span> <span class="text-[#05d9e8]">"upload_file"</span><br> <span class="text-[#ff2a6d]">doc_token:</span> <span class="text-[#05d9e8]">"ABC123"</span><br> <span class="text-[#ff2a6d]">url:</span> <span class="text-[#05d9e8]">"https://example.com/report.pdf"</span><br> <span class="text-[#ff2a6d]">或 file_path:</span> <span class="text-[#05d9e8]">"/tmp/report.pdf"</span> </div> </div> </div> <div class="bg-[#05010d] rounded-lg p-6"> <h3 class="text-lg font-bold text-[#05d9e8] mb-3">2. message (消息发送)</h3> <p class="text-gray-400 text-sm mb-4">用于发送消息和附件到飞书聊天</p> <div class="font-mono text-sm"> <span class="text-[#f9f871]"># 发送带附件的消息</span><br> <span class="text-[#ff2a6d]">action:</span> <span class="text-[#05d9e8]">"send"</span><br> <span class="text-[#ff2a6d]">channel:</span> <span class="text-[#05d9e8]">"feishu"</span><br> <span class="text-[#ff2a6d]">message:</span> <span class="text-[#05d9e8]">"这是您要的文件"</span><br> <span class="text-[#ff2a6d]">filePath:</span> <span class="text-[#05d9e8]">"/tmp/report.pdf"</span><br> <span class="text-[#ff2a6d]">或 buffer:</span> <span class="text-[#05d9e8]">"base64..."</span><br> <span class="text-[#ff2a6d]">filename:</span> <span class="text-[#05d9e8]">"report.pdf"</span> </div> </div> </div> </section> <!-- Usage Scenarios --> <section class="cyber-card rounded-xl p-8 mb-8"> <h2 class="text-2xl font-bold text-[#f9f871] mb-4">📖 使用场景</h2> <div class="space-y-4"> <div class="flex items-start gap-3"> <span class="text-[#05d9e8] font-bold">📄</span> <div> <p class="text-gray-300 font-semibold">发送文档文件</p> <p class="text-gray-500 text-sm">PDF、DOCX、Excel、TXT 等办公文档</p> </div> </div> <div class="flex items-start gap-3"> <span class="text-[#05d9e8] font-bold">🖼️</span> <div> <p class="text-gray-300 font-semibold">发送图片</p> <p class="text-gray-500 text-sm">PNG、JPG、GIF、WebP 等图片格式</p> </div> </div> <div class="flex items-start gap-3"> <span class="text-[#05d9e8] font-bold">📦</span> <div> <p class="text-gray-300 font-semibold">发送压缩包</p> <p class="text-gray-500 text-sm">ZIP、RAR、7Z 等压缩文件</p> </div> </div> <div class="flex items-start gap-3"> <span class="text-[#05d9e8] font-bold">📊</span> <div> <p class="text-gray-300 font-semibold">发送数据报表</p> <p class="text-gray-500 text-sm">自动生成的 CSV、Excel 数据分析报告</p> </div> </div> </div> </section> <!-- Code Examples --> <section class="cyber-card rounded-xl p-8 mb-8"> <h2 class="text-2xl font-bold text-[#05d9e8] mb-4">💻 实战示例</h2> <div class="space-y-6"> <!-- Example 1 --> <div> <h3 class="text-lg font-bold text-[#ff2a6d] mb-3">示例 1: 发送本地文件</h3> <div class="bg-[#05010d] rounded-lg p-6 overflow-x-auto"> <pre class="text-sm text-gray-300 font-mono"><code><span class="text-gray-500"># 通过 message 工具发送本地文件</span>
+
+message(
+  action: <span class="text-[#05d9e8]">"send"</span>,
+  channel: <span class="text-[#05d9e8]">"feishu"</span>,
+  message: <span class="text-[#05d9e8]">"阿宽部长，这是您要的合同审核报告！"</span>,
+  filePath: <span class="text-[#05d9e8]">"/tmp/contract_review.pdf"</span>,
+  filename: <span class="text-[#05d9e8]">"合同审核报告 -20260318.pdf"</span>
+)</code></pre> </div> </div> <!-- Example 2 --> <div> <h3 class="text-lg font-bold text-[#ff2a6d] mb-3">示例 2: 发送网络图片</h3> <div class="bg-[#05010d] rounded-lg p-6 overflow-x-auto"> <pre class="text-sm text-gray-300 font-mono"><code><span class="text-gray-500"># 先上传到飞书云文档，再发送</span>
+
+<span class="text-gray-500"># 步骤 1: 上传图片到云文档</span>
+feishu_doc(
+  action: <span class="text-[#05d9e8]">"upload_image"</span>,
+  doc_token: <span class="text-[#05d9e8]">"ABC123"</span>,
+  url: <span class="text-[#05d9e8]">"https://example.com/chart.png"</span>
+)
+
+<span class="text-gray-500"># 步骤 2: 发送消息（图片会自动显示）</span>
+message(
+  action: <span class="text-[#05d9e8]">"send"</span>,
+  channel: <span class="text-[#05d9e8]">"feishu"</span>,
+  message: <span class="text-[#05d9e8]">"这是最新的数据分析图表！📊"</span>
+)</code></pre> </div> </div> <!-- Example 3 --> <div> <h3 class="text-lg font-bold text-[#ff2a6d] mb-3">示例 3: 发送 Base64 数据</h3> <div class="bg-[#05010d] rounded-lg p-6 overflow-x-auto"> <pre class="text-sm text-gray-300 font-mono"><code><span class="text-gray-500"># 发送生成的二维码/图表等</span>
+
+message(
+  action: <span class="text-[#05d9e8]">"send"</span>,
+  channel: <span class="text-[#05d9e8]">"feishu"</span>,
+  message: <span class="text-[#05d9e8]">"这是生成的二维码！"</span>,
+  buffer: <span class="text-[#05d9e8]">"data:image/png;base64,iVBORw0KGgoAAAANS..."</span>,
+  filename: <span class="text-[#05d9e8]">"qrcode.png"</span>
+)</code></pre> </div> </div> <!-- Example 4 --> <div> <h3 class="text-lg font-bold text-[#ff2a6d] mb-3">示例 4: 压缩后发送</h3> <div class="bg-[#05010d] rounded-lg p-6 overflow-x-auto"> <pre class="text-sm text-gray-300 font-mono"><code><span class="text-gray-500"># 先压缩，再发送</span>
+
+<span class="text-gray-500"># 步骤 1: 执行压缩命令</span>
+exec(
+  command: <span class="text-[#05d9e8]">"zip -r /tmp/report.zip /tmp/report_files/"</span>
+)
+
+<span class="text-gray-500"># 步骤 2: 发送压缩包</span>
+message(
+  action: <span class="text-[#05d9e8]">"send"</span>,
+  channel: <span class="text-[#05d9e8]">"feishu"</span>,
+  message: <span class="text-[#05d9e8]">"阿宽部长，完整报告已打包发送！📦"</span>,
+  filePath: <span class="text-[#05d9e8]">"/tmp/report.zip"</span>,
+  filename: <span class="text-[#05d9e8]">"完整报告 -20260318.zip"</span>
+)</code></pre> </div> </div> </div> </section> <!-- Tips & Best Practices --> <section class="cyber-card rounded-xl p-8 mb-8"> <h2 class="text-2xl font-bold text-[#f9f871] mb-4">💡 最佳实践</h2> <div class="space-y-4"> <div class="flex items-start gap-3"> <span class="text-[#05d9e8] font-bold">✅</span> <div> <p class="text-gray-300">文件命名清晰，包含日期和描述</p> <p class="text-gray-500 text-sm">例：`合同审核报告 -20260318.pdf`</p> </div> </div> <div class="flex items-start gap-3"> <span class="text-[#05d9e8] font-bold">✅</span> <div> <p class="text-gray-300">大文件先压缩再发送</p> <p class="text-gray-500 text-sm">减少传输时间，提升用户体验</p> </div> </div> <div class="flex items-start gap-3"> <span class="text-[#05d9e8] font-bold">✅</span> <div> <p class="text-gray-300">发送前确认文件路径正确</p> <p class="text-gray-500 text-sm">避免发送失败或空文件</p> </div> </div> <div class="flex items-start gap-3"> <span class="text-[#05d9e8] font-bold">✅</span> <div> <p class="text-gray-300">配合文字说明一起发送</p> <p class="text-gray-500 text-sm">告诉用户文件内容和用途</p> </div> </div> <div class="flex items-start gap-3"> <span class="text-[#ff2a6d] font-bold">⚠️</span> <div> <p class="text-gray-300">注意文件大小限制</p> <p class="text-gray-500 text-sm">飞书单文件限制 500MB，建议控制在 100MB 以内</p> </div> </div> </div> </section> <!-- Common Issues --> <section class="cyber-card rounded-xl p-8 mb-8"> <h2 class="text-2xl font-bold text-[#ff2a6d] mb-4">🔧 常见问题</h2> <div class="space-y-4"> <div> <h3 class="text-[#05d9e8] font-bold mb-2">Q: 发送失败怎么办？</h3> <p class="text-gray-300 text-sm">
+检查：1) 文件路径是否正确；2) 文件是否存在；3) 是否有读取权限；
+              4) 飞书 Bot 权限是否配置正确（需要 drive:drive 权限）
+</p> </div> <div> <h3 class="text-[#05d9e8] font-bold mb-2">Q: 图片显示太小？</h3> <p class="text-gray-300 text-sm">
+上传前将图片缩放到 800px+ 宽度，确保在飞书中正常显示。
+              小图片（如 480x270）会被压缩得更小。
+</p> </div> <div> <h3 class="text-[#05d9e8] font-bold mb-2">Q: 如何发送多个文件？</h3> <p class="text-gray-300 text-sm">
+方法 1: 打包成 ZIP 发送；方法 2: 分多次 message 调用发送；
+              方法 3: 上传到飞书云文档后分享链接
+</p> </div> </div> </section> <!-- Related Skills --> <section class="cyber-card rounded-xl p-8"> <h2 class="text-2xl font-bold text-[#f9f871] mb-4">🔗 相关技能</h2> <div class="flex gap-4 flex-wrap"> <a href="/skills/secure-secrets" class="cyber-card px-4 py-2 text-[#05d9e8] hover:text-[#ff2a6d] transition-colors">
+🔒 守口如瓶
+</a> </div> </section> <!-- Back Link --> <div class="mt-12 text-center"> <a href="/skills" class="inline-flex items-center gap-2 text-[#05d9e8] hover:text-[#ff2a6d] transition-colors"> <span>←</span> <span>返回技能列表</span> </a> </div> </div> </div>  </body></html>
